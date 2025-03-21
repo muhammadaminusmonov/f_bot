@@ -265,7 +265,7 @@ async def callback_query_handler(update: Update, context: CallbackContext):
 
     # 🔹 Check message type
     message = db.get_message(user.id)
-    caption = f"📩 Message from {f"{first_name} {last_name}"}:\n\n"  # Common caption format
+    caption = f"📩 Message from {first_name} {last_name}:\n\n"  # Common caption format
 
 
     if data[0] == "yes":
