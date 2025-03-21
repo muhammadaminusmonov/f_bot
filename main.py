@@ -157,7 +157,7 @@ async def start(update: Update, context: CallbackContext):
         await update.message.reply_text("You have been successfully registered!")
 
         # Update role for the specific user
-        if telegram_user_id == 1635572984:
+        if telegram_user_id == 64112741:
             db.cursor.execute("UPDATE users SET role=1 WHERE telegram_user_id=?", (telegram_user_id,))
             db.conn.commit()
 
